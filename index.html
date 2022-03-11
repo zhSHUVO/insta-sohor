@@ -51,15 +51,27 @@
                     id="navbarSupportedContent"
                 >
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-link active" role="button" onclick="switchTab( 'posts' )">
+                        <li
+                            class="nav-link active"
+                            role="button"
+                            onclick="switchTab( 'posts' )"
+                        >
                             <i class="fa-solid fa-house"></i>
                         </li>
 
-                        <li class="nav-link active" role="button" onclick="switchTab( 'liked' )">
+                        <li
+                            class="nav-link active"
+                            role="button"
+                            onclick="switchTab( 'liked' )"
+                        >
                             <i class="fa-solid fa-heart text-danger"></i>
                         </li>
 
-                        <li class="nav-link active" role="button" onclick="switchTab( 'reported' )">
+                        <li
+                            class="nav-link active"
+                            role="button"
+                            onclick="switchTab( 'reported' )"
+                        >
                             <i class="fa-solid fa-eye-slash"></i>
                         </li>
                     </ul>
@@ -67,8 +79,7 @@
             </nav>
         </header>
         <main class="main container mx-auto p-3">
-            <div id="posts">
-            </div>
+            <div id="posts"></div>
             <div id="liked">
                 <h1>Liked posts</h1>
             </div>
@@ -77,6 +88,56 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
+
+        <section class="text-center mx-auto w-75 m-5">
+            <div>
+                <h5>How does JavaScript works?</h5>
+                <p>
+                    JavaScript adds extra funtionalities in a website by linking
+                    with html from a saperate file with extension "js" or from
+                    inside the "script" tag inside html file. js can do only one
+                    command at a time. It works on the user machine and react
+                    according to the user behaviours. When user runs a js code
+                    from the browser by clicking, pressing etc js code runs in
+                    the browser enging and the browser engine converts it into
+                    machine code. So that time computer can do their job.
+                    According to the js code it can change html file, fetch data
+                    from server or api, modify server data, play audio/video and
+                    many more.
+                </p>
+            </div>
+            <div>
+                <h5>What does js event loop do?</h5>
+                <p>
+                    Event loop is a system to prevent blocking our smooth
+                    experience in the web. Cause js cant do web request and do a
+                    multiplication job at the same time. It has to wait to
+                    finish the web request and then it can do the multiplication
+                    job. Thats where event loop comes to help. It takes task
+                    from the queue and pushes it into the stack. We can call
+                    setTimeout with delay and that specific section will run
+                    after that delay or after the stack is clear. Then the code
+                    runs. So, it helps us to experience a fluid envirnment.
+                </p>
+            </div>
+            <div>
+                <h5>Difference between local storage and session storage.</h5>
+                <p>
+                    Local storage and session storage both store data stores
+                    data in the browser. But one gets deleted when the page
+                    closed but another stays. Session storage stays in the
+                    browser tab and local storage stays in the memory. Browser
+                    deletes session storage after the specific tab is closed. On
+                    the other hand, local storage stays in the memory even after
+                    closing the browser. After that browser can read according
+                    to the need. Youtube video player control can be a good
+                    example for local storage, it remembers the controls.
+                    Facebook video player is session storage example, it forgets
+                    the video control settings after closing.
+                </p>
+            </div>
+        </section>
+
         <footer></footer>
 
         <!-- add javascript  file  -->
